@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&family=Josefin+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+    --bg: #F6F8FC;
+    --bg-bar: #32385A;
+    --bg-leaderboard: #FCFDFF;
+    --bg-card: #FCFCFD;
+    --bg-button:#3D446A;
+    --bg-linear: linear-gradient(to bottom, #F54162, #F8544A);
+    --box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    --fz-heading: 2rem;
+    --fz-anchor: 1.6rem;
+    --ff-title: 'Poppins', sans-serif;
+    --ff-para:  'David Libre', serif;
+    --fc: #fff;
+    --fc-head: #161616;
+    --fc-para: #B7B9C7;
+    --fc-hpara: #32385A;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-title);
+}
+html{
+    font-size: 62.5%;
+    background: var(--bg);
+}
