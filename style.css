@@ -1,21 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&family=Josefin+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&family=Poppins:ital,wght@0,500;0,600;1,600&display=swap');
 
 :root{
-    --bg: #F6F8FC;
-    --bg-bar: #32385A;
-    --bg-leaderboard: #FCFDFF;
-    --bg-card: #FCFCFD;
-    --bg-button:#3D446A;
+    --bg: #F3F1FF;
+    --bg-header: #32385A;
+    --bg-card: #fff;
     --bg-linear: linear-gradient(to bottom, #F54162, #F8544A);
     --box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-    --fz-heading: 2rem;
-    --fz-anchor: 1.6rem;
+    --btn-shadow: box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    --fz-heading: 6rem;
+    --fz-title: 2rem;
+    --fz-para: 1.2rem;
     --ff-title: 'Poppins', sans-serif;
     --ff-para:  'David Libre', serif;
     --fc: #fff;
-    --fc-head: #161616;
-    --fc-para: #B7B9C7;
-    --fc-hpara: #32385A;
+    --fc-title: #161616;
+    --fc-para: #6c6c6c;
+    --fw400: 400;
+    --fw500: 500;
+    --fw600: 600;
 }
 *{
     margin: 0;
@@ -27,3 +29,108 @@ html{
     font-size: 62.5%;
     background: var(--bg);
 }
+body{
+    width: 100%;
+}
+header{
+    background: var(--bg-header);
+}
+header .container{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+/* navbar start */
+header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+header .nav a{
+    text-decoration: none;
+    color: var(--fc);
+    font-size: var(--fz-title);
+    margin: 0 2rem;
+    font-weight: var(--fw400);
+}
+.btn{
+    color: var(--fc);
+    background: var(--bg-linear);
+    font-size: var(--fz-title);
+    padding: 0.7rem 2rem;
+    font-weight: var(--fw400);
+    border-width: 0;
+}
+.btn:hover{
+    box-shadow: var(--btn-shadow);
+    transform: scale(0.9);
+    transition: all 0.2s linear;
+}
+section button{
+    margin-left: 2rem;
+}
+.btn i{
+    padding: 0 1rem;
+}
+/* navbar done  */
+
+/* section start  */
+section{
+    display: flex;
+    align-items: center;
+}
+section .sec_heading {
+    color: var(--fc);
+    font-size: var(--fz-heading);
+    margin: 0 2rem;
+    font-weight: var(--fw600);
+}
+section .section_logo{
+    margin: 0 auto;
+}
+/* player content  */
+section .section_logo .player img{
+    width: 35rem;
+    transform: rotate(-50deg) ;
+}
+section:hover .player img{
+    transform: rotate(20deg);
+    transition: all 0.2s ease-in;
+}
+/* ball content */
+section .section_logo .ball img{
+    width: 7rem;
+    position: relative;
+    top: -47rem;
+    right: -15rem;
+}
+section:hover .ball img{
+    transform: translate( 70rem, 8rem);
+    transition: all 0.5s ease-out 0.2s;
+}
+/* section done  */
+
+/* article start  */
+article.card_wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    margin: 0 auto;
+}
+.card_wrapper .player_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+.card_wrapper .player_card img{
+    width: 20rem;
+    height: 20rem;
+}
+.card_wrapper .player_card .card_content{
+    width:;
+}
+.card_wrapper .player_card{}
+.card_wrapper .player_card{}
+/* article end  */
