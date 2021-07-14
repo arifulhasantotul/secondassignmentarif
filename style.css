@@ -198,6 +198,46 @@ article.highlight{
 }
 /* highlights end  */
 
+/* leaderboard start  */
+article.leaderboard{
+    margin-top: 7rem;
+    text-align: center;
+}
+.leaderboard h1{
+    font-size: var(--fz-title);
+    font-weight: var(--fw600);
+    margin-bottom: 4rem;
+}
+/* all scorers  */
+.leaderboard .scorers_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 20rem);
+    justify-content: center;
+    grid-gap: 2rem;
+    margin: 2rem;
+}
+/* top players  */
+.scorers_wrapper .top_score {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--fc);
+    padding: 1.5rem 0;
+    line-height: 2rem;
+    box-shadow: var(--box-shadow);
+}
+.scorers_wrapper .top_score img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.scorers_wrapper .top_score .score{
+    color: var(--fc-para)
+}
+/* leaderboard end  */
+
 /* contact start  */
 article.contact {
     text-align: center;
