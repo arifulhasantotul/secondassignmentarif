@@ -335,10 +335,10 @@ footer .footer_copyright{
 /* responsive start  */
 
 /* mobile device */
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 688px) {
 
     header, article, footer{
-        width: 100%;
+        width: 100vw;
     }
     header .container{
         max-width: auto;
@@ -350,7 +350,7 @@ footer .footer_copyright{
         flex-direction: column;
     }
     section .sec_heading{
-        font-size: 4rem;
+        font-size: 5rem;
         margin: 2rem 0;
         text-align: left;
     }
@@ -359,16 +359,21 @@ footer .footer_copyright{
     }
     section .section_logo .player img{
         width: 30rem;
+        transform: none;
+        transition: none;
     }
     section .section_logo .ball img{
         width: 4.5rem
+    }
+    section:hover .ball img{
+        transform: none;
+        transition: none;
     }
     article.card_wrapper,
     article.highlight, 
     .leaderboard .scorers_wrapper,
     .contact .card_wrapper{
         grid-template-columns: repeat(1, 1fr);
-        margin-right: 0;
 
     }
     article.highlight{
