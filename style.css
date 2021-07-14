@@ -401,9 +401,15 @@ footer .footer_copyright{
     }
     section .section_logo .player img{
         width: 30rem;
+        transform: none;
+        transition: none;
     }
     section .section_logo .ball img{
         width: 4.5rem
+    }
+    section:hover .ball img{
+        transform: none;
+        transition: none;
     }
     article.card_wrapper,
     article.highlight, 
@@ -420,5 +426,25 @@ footer .footer_copyright{
     }
     section .section_logo{
         margin-left: auto;
+    }
+}
+/* another screen  */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+
+    header .container{
+        max-width: 100%;
+        padding: 0 7rem;
+    }
+    section .section_logo .player img{
+        width: 30rem;
+        transform: none;
+        transition: none;
+    }
+    section .section_logo .ball img{
+        width: 4.5rem
+    }
+    section:hover .ball img{
+        transform: none;
+        transition: none;
     }
 }
