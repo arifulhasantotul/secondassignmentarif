@@ -93,7 +93,7 @@ section .section_logo{
 }
 /* player content  */
 section .section_logo .player img{
-    width: 35rem;
+    width: 32rem;
     transform: rotate(-50deg) ;
 }
 section:hover .player img{
@@ -102,13 +102,13 @@ section:hover .player img{
 }
 /* ball content */
 section .section_logo .ball img{
-    width: 7rem;
+    width: 6rem;
     position: relative;
-    top: -47rem;
+    top: -45rem;
     right: -15rem;
 }
 section:hover .ball img{
-    transform: translate( 70rem, 8rem);
+    transform: translate( 47rem, 8rem);
     transition: all 0.5s ease-out 0.2s;
 }
 /* section done  */
@@ -116,15 +116,15 @@ section:hover .ball img{
 /* article start  */
 article.card_wrapper{
     display: grid;
-    grid-template-columns: repeat(3, 25rem);
-    grid-row-gap: 2rem;
+    grid-template-columns: repeat(3, 20rem);
+    grid-row-gap: 1.5rem;
+    grid-column-gap: 1.5rem;
     align-items: center;
     justify-content: center;
     margin: 7rem 0;
 }
 /* card content start  */
 .card_wrapper .player_card{
-    width: 23rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -331,3 +331,89 @@ footer .footer_copyright{
     padding-bottom: 4rem;
 }
 /* footer end  */
+
+/* responsive start  */
+
+/* mobile device */
+@media only screen and (max-width: 420px) {
+
+    header, article, footer{
+        width: 100%;
+    }
+    header .container{
+        max-width: auto;
+    }
+    header .nav a{
+        display: none;
+    }
+    section{
+        flex-direction: column;
+    }
+    section .sec_heading{
+        font-size: 4rem;
+        margin: 2rem 0;
+        text-align: left;
+    }
+    section .section_logo{
+        margin-top: 3rem;
+    }
+    section .section_logo .player img{
+        width: 30rem;
+    }
+    section .section_logo .ball img{
+        width: 4.5rem
+    }
+    article.card_wrapper,
+    article.highlight, 
+    .leaderboard .scorers_wrapper,
+    .contact .card_wrapper{
+        grid-template-columns: repeat(1, 1fr);
+        margin-right: 0;
+
+    }
+    article.highlight{
+        margin-left: 3rem;
+    }
+    
+}
+
+/* tablet devices */
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+
+    header, article, footer{
+        width: 100vw;
+    }
+    header .container{
+        max-width: auto;
+    }
+    section{
+        flex-direction: column;
+    }
+    section .sec_heading{
+        font-size: 5rem;
+        margin: 2rem;
+    }
+    section .section_logo .player img{
+        width: 30rem;
+    }
+    section .section_logo .ball img{
+        width: 4.5rem
+    }
+    article.card_wrapper,
+    article.highlight, 
+    .leaderboard .scorers_wrapper,
+    .contact .card_wrapper{
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 0;
+    }
+    article.highlight{
+        margin-left: 3rem;
+    }
+    section .section_title{
+        margin-right: auto;
+    }
+    section .section_logo{
+        margin-left: auto;
+    }
+}
